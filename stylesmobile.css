@@ -18,7 +18,7 @@
     }
 
     .hero-image {
-        max-width: 100%;
+        max-width: 50%;
         height: auto; /* Maintain aspect ratio */
     }
 
@@ -44,28 +44,13 @@
     }
 }
 
-/* Tablet Styles (max-width: 768px) */
-@media screen and (max-width: 768px) {
-    .about-container {
-        flex-direction: column;
-        align-items: center;
-        flex-wrap: wrap; /* Ensure content doesn't overlap */
-    }
 
-    .about-image img {
-        margin-bottom: 20px;
-        width: 100%; /* Full width to avoid overlap */
-    }
-
-    .projects-grid {
-        grid-template-columns: 1fr; /* Ensure single column layout on smaller screens */
-    }
 
     /* Prevent content overflow */
     body {
         overflow-x: hidden;
     }
-}
+
 
 video {
     max-width: 100%; 
@@ -73,3 +58,30 @@ video {
     display: block; /* Ensures the video behaves as a block element */
     margin: 0 auto; 
 }
+
+ /* About Me section */
+ .about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px; /* Add padding to avoid content touching the edges */
+}
+
+.about-image img {
+    width: 100%; /* Ensure image takes up full width */
+    height: auto; /* Auto-adjust height */
+    margin-bottom: 20px;
+}
+
+.about-text {
+    width: 100%;
+    text-align: center;
+}
+
+/* Ensure nothing is cutting off */
+section {
+    overflow: hidden;
+}
+
+
+
