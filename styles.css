@@ -64,16 +64,16 @@ nav ul li a:hover {
 
 .hero-content {
     max-width: 50%;
-    font-family: 'Cursive'; /* Changes font to cursive */
+    font-family: 'Cursive'; 
 }
 
 .hero-content h1 {
-    font-family: 'Cursive'; /* Cursive font for the title */
+    font-family: 'Cursive'; 
     font-size: 3rem;
 }
 
 .hero-content p {
-    font-family: 'Cursive'; /* Cursive font for the introduction */
+    font-family: 'Cursive'; 
     font-size: 1.5rem;
 }
 
@@ -264,7 +264,7 @@ video {
 
 .project-item img {
     width: 100%; /* Ensures the image fills the container width */
-    height: auto; /* Keeps the aspect ratio */
+    height: auto; /*  automatically adjust the height of the image relative to its width.  */
     border-radius: 5px;
     margin-bottom: 10px;
 }
@@ -277,11 +277,11 @@ video {
 
 .project-item h2 {
     margin-top: 10px;
-    font-size: 1.5rem;
+    font-size: 1.5rem; /* rem 16ptx /*
 }
 
 .project-item p {
-    font-size: 1rem;
+    font-size: 1rem; 
     color: #f1e8e8;
 }
 
