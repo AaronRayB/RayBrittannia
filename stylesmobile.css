@@ -1,5 +1,15 @@
 /* Mobile Styles */
 @media only screen and (max-width: 600px) {
+    nav ul li {
+        margin: 0 10px; 
+    }
+
+    nav ul li a {
+        padding: 10px 5px;
+        font-size: 14px; 
+    }
+
+    
     .hero-content h1 {
         font-size: 14px;
     }
@@ -27,3 +37,11 @@
         margin-bottom: 20px;
     }
 }
+
+video {
+    max-width: 100%; 
+    height: auto; 
+    display: block; /* Ensures the video behaves as a block element */
+    margin: 0 auto; 
+}
+
