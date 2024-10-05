@@ -1,5 +1,6 @@
 /* Mobile Styles */
 @media only screen and (max-width: 600px) {
+    /* Nav and general layout adjustments */
     nav ul li {
         margin: 0 10px; 
     }
@@ -9,79 +10,81 @@
         font-size: 14px; 
     }
 
-    .hero-content h1 {
+    /* Hero content and project grid adjustments */
+    .hero-content h1, .hero-content p {
         font-size: 14px;
-    }
-
-    .hero-content p {
-        font-size: 1rem;
     }
 
     .hero-image {
         max-width: 50%;
-        height: auto; /* Maintain aspect ratio */
+        height: auto;
     }
 
     .projects-grid {
-        grid-template-columns: 1fr; /* Single column layout */
+        grid-template-columns: 1fr;
     }
 
+    /* About container adjustments */
     .about-container {
         flex-direction: column;
         align-items: center;
-        flex-wrap: wrap; /* Ensures no overlap */
+        flex-wrap: wrap;
     }
 
     .about-image img {
         width: 100%;
-        margin-right: 0;
+        max-width: 400px; /* Set a max-width to avoid oversized images */
+        height: auto;
         margin-bottom: 20px;
     }
 
-    /* Avoid horizontal scrolling */
+    /* Adjust paragraph spacing and ensure no overflow */
+    .about-content p {
+        padding: 0 10px;
+        text-align: justify;
+        font-size: 1rem;
+    }
+
+    /* Remove the overflow issue */
+    section {
+        overflow: hidden;
+    }
+
+    /* Fix body overflow */
     body {
         overflow-x: hidden;
+        background-color: white; /* Avoid weird background issues */
     }
 }
 
-
-
-    /* Prevent content overflow */
-    body {
-        overflow-x: hidden;
-    }
-
-
+/* Ensuring that video scales well */
 video {
-    max-width: 100%; 
-    height: auto; 
-    display: block; /* Ensures the video behaves as a block element */
-    margin: 0 auto; 
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+/* Projects Section - Adjust Spacing */
+.projects-grid {
+    grid-template-columns: 1fr;
+    gap: 20px; /* Add space between project items */
 }
 
- /* About Me section */
- .about-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0 20px; /* Add padding to avoid content touching the edges */
+.projects-grid p {
+    padding: 10px;
+    text-align: justify;
+    font-size: 16px;
+    line-height: 1.5; /* Ensure readability */
 }
 
+/* Make sure all project images are scaled down */
+.projects-grid img {
+    max-width: 100%;
+    height: auto;
+}
+/* About Image Size Fix */
 .about-image img {
-    width: 100%; /* Ensure image takes up full width */
-    height: auto; /* Auto-adjust height */
-    margin-bottom: 20px;
+    max-width: 400px; /* Set a maximum width to prevent it from getting too big */
+    width: 100%; /* Keep it responsive */
+    height: auto;
 }
-
-.about-text {
-    width: 100%;
-    text-align: center;
-}
-
-/* Ensure nothing is cutting off */
-section {
-    overflow: hidden;
-}
-
-
-
