@@ -88,3 +88,16 @@ video {
     width: 100%; /* Keep it responsive */
     height: auto;
 }
+.logo.logo.png.png {
+    max-width: 150px; /* Adjust the max width to your preference */
+    height: auto; /* Keeps the aspect ratio */
+    display: block;
+    margin: 0 auto; /* Centers the logo */
+}
+
+@media only screen and (max-width: 600px) {
+    .logo.logo.png {
+        max-width: 100px; /* Make it smaller on mobile screens */
+    }
+}
+
