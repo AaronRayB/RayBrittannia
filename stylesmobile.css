@@ -1,29 +1,29 @@
 /* Mobile Styles */
 @media only screen and (max-width: 600px) {
     
-    /* Nav and general layout adjustments */
+    /* Nav and general layout */
     nav ul {
-        flex-direction: column; /* Stack the navigation items vertically */
+        flex-direction: column; 
         align-items: center;
         padding: 0;
     }
 
     nav ul li {
-        margin: 10px 0; /* Increase margin for spacing */
+        margin: 10px 0; 
     }
 
     nav ul li a {
         padding: 10px 5px;
-        font-size: 14px; /* Reduce font size for better fit */
+        font-size: 14px;
     }
 
-    /* Hero content adjustments */
+    /* Hero content  */
     .hero-content h1 {
-        font-size: 24px; /* Slightly larger for heading clarity */
+        font-size: 24px; 
     }
 
     .hero-content p {
-        font-size: 16px; /* Maintain readability for paragraph text */
+        font-size: 16px; 
     }
 
     .hero-image {
@@ -32,13 +32,12 @@
         margin: 0 auto; /* Center the hero image */
     }
 
-    /* Project grid adjustments */
+    /* Project grid  */
     .projects-grid {
-        grid-template-columns: 1fr; /* Single-column layout for projects */
-    }
+        grid-template-columns: 1fr;
 
     .project-item {
-        padding: 15px; /* Add padding around project items */
+        padding: 15px; 
     }
 
     /* About container adjustments */
@@ -50,12 +49,12 @@
 
     .about-image img {
         width: 100%; /* Ensure the image uses full width */
-        max-width: 400px; /* Set a max width to keep it from getting too large */
+        max-width: 400px; 
         height: auto;
         margin-bottom: 20px;
     }
 
-    /* Adjust paragraph spacing and ensure no overflow */
+    /*  paragraph spacing and ensure no overflow */
     .about-content p {
         padding: 0 10px;
         text-align: justify;
@@ -97,21 +96,21 @@ video {
 
 /* Make sure all project images are scaled down */
 .projects-grid img {
-    max-width: 100%; /* Keep images responsive */
+    max-width: 100%; 
     height: auto;
 }
 
-/* About Image Size Fix */
+/*Image Size  */
 .about-image img {
     max-width: 400px; /* Set a maximum width */
-    width: 100%; /* Keep it responsive */
+    width: 100%; 
     height: auto;
 }
 
-/* Logo adjustments */
+/* Logo  */
 .logo {
     max-width: 150px; /* Adjust the max width of the logo */
-    height: auto; /* Keeps the aspect ratio */
+    height: auto; 
     display: block;
     margin: 0 auto; /* Centers the logo */
 }
