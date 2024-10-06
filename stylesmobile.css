@@ -1,23 +1,23 @@
 /* Mobile Styles */
 @media only screen and (max-width: 600px) {
-    
-    /* Nav and general layout */
+
+    /* Nav and general layout adjustments */
     nav ul {
-        flex-direction: column; 
+        flex-direction: column; /* Stack the navigation items vertically */
         align-items: center;
         padding: 0;
     }
 
     nav ul li {
-        margin: 10px 0; 
+        margin: 10px 0; /* Increase margin for spacing */
     }
 
     nav ul li a {
         padding: 10px 5px;
-        font-size: 14px;
+        font-size: 14px; 
     }
 
-    /* Hero content  */
+    /* Hero content adjustments */
     .hero-content h1 {
         font-size: 24px; 
     }
@@ -27,34 +27,35 @@
     }
 
     .hero-image {
-        max-width: 80%; /* Keep the image large, but scaled for mobile */
+        max-width: 80%; 
         height: auto;
         margin: 0 auto; /* Center the hero image */
     }
 
     /* Project grid  */
     .projects-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; 
+    }
 
     .project-item {
         padding: 15px; 
     }
 
-    /* About container adjustments */
+    /* About container  */
     .about-container {
-        flex-direction: column; /* Stack about section items */
+        flex-direction: column; 
         align-items: center;
         padding: 20px;
     }
 
     .about-image img {
         width: 100%; /* Ensure the image uses full width */
-        max-width: 400px; 
+        max-width: 400px; /* Set a max width to keep it from getting too large */
         height: auto;
         margin-bottom: 20px;
     }
 
-    /*  paragraph spacing and ensure no overflow */
+    /* Adjust paragraph spacing /*
     .about-content p {
         padding: 0 10px;
         text-align: justify;
@@ -69,13 +70,56 @@
     /* Fix body overflow */
     body {
         overflow-x: hidden;
-        background-color: white; /* Avoid weird background issues */
+        background-color: white; 
+    }
+
+    
+    section {
+        overflow: hidden; /* Prevent any content overflow */
+    }
+
+    /* Hero Section and Image */
+    .hero-content h1 {
+        font-size: 24px; /* Reaffirming mobile header size */
+    }
+
+    .hero-image {
+        max-width: 80%;
+        margin: 0 auto;
+        display: block; /* Center the image */
+    }
+
+    /* About Section */
+    .about-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-image img {
+        width: 100%;
+        max-width: 400px; /* Adjust image size */
+        height: auto;
+    }
+
+    .about-content {
+        padding: 10px;
+        text-align: justify;
+        font-size: 1rem;
+    }
+
+    /* Logo adjustments */
+    .logo {
+        max-width: 100px;
+        height: auto;
+        display: block;
+        margin: 0 auto; /* Center the logo */
     }
 }
 
 /* Ensuring that video scales well */
 video {
-    max-width: 100%; /* Keep the video responsive */
+    max-width: 100%; 
     height: auto;
     display: block;
     margin: 0 auto; /* Center the video */
@@ -94,23 +138,23 @@ video {
     line-height: 1.5; /* Ensure readability */
 }
 
-/* Make sure all project images are scaled down */
+
 .projects-grid img {
-    max-width: 100%; 
+    max-width: 100%; /* Keep images responsive */
     height: auto;
 }
 
-/*Image Size  */
+
 .about-image img {
     max-width: 400px; /* Set a maximum width */
-    width: 100%; 
+    width: 100%; /* Keep it responsive */
     height: auto;
 }
 
-/* Logo  */
+/* Logo adjustments */
 .logo {
     max-width: 150px; /* Adjust the max width of the logo */
-    height: auto; 
+    height: auto; /* Keeps the aspect ratio */
     display: block;
     margin: 0 auto; /* Centers the logo */
 }
