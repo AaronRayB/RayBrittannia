@@ -1,39 +1,56 @@
 /* Mobile Styles */
 @media only screen and (max-width: 600px) {
+    
     /* Nav and general layout adjustments */
+    nav ul {
+        flex-direction: column; /* Stack the navigation items vertically */
+        align-items: center;
+        padding: 0;
+    }
+
     nav ul li {
-        margin: 0 10px; 
+        margin: 10px 0; /* Increase margin for spacing */
     }
 
     nav ul li a {
         padding: 10px 5px;
-        font-size: 14px; 
+        font-size: 14px; /* Reduce font size for better fit */
     }
 
-    /* Hero content and project grid adjustments */
-    .hero-content h1, .hero-content p {
-        font-size: 14px;
+    /* Hero content adjustments */
+    .hero-content h1 {
+        font-size: 24px; /* Slightly larger for heading clarity */
+    }
+
+    .hero-content p {
+        font-size: 16px; /* Maintain readability for paragraph text */
     }
 
     .hero-image {
-        max-width: 30%;
+        max-width: 80%; /* Keep the image large, but scaled for mobile */
         height: auto;
+        margin: 0 auto; /* Center the hero image */
     }
 
+    /* Project grid adjustments */
     .projects-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; /* Single-column layout for projects */
+    }
+
+    .project-item {
+        padding: 15px; /* Add padding around project items */
     }
 
     /* About container adjustments */
     .about-container {
-        flex-direction: column;
+        flex-direction: column; /* Stack about section items */
         align-items: center;
-        flex-wrap: wrap;
+        padding: 20px;
     }
 
     .about-image img {
-        width: 50%;
-        max-width: 200px; /* Set a max-width to avoid oversized images */
+        width: 100%; /* Ensure the image uses full width */
+        max-width: 400px; /* Set a max width to keep it from getting too large */
         height: auto;
         margin-bottom: 20px;
     }
@@ -59,14 +76,15 @@
 
 /* Ensuring that video scales well */
 video {
-    max-width: 50%;
+    max-width: 100%; /* Keep the video responsive */
     height: auto;
     display: block;
-    margin: 0 auto;
+    margin: 0 auto; /* Center the video */
 }
+
 /* Projects Section - Adjust Spacing */
 .projects-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; /* Single-column for mobile */
     gap: 20px; /* Add space between project items */
 }
 
@@ -79,25 +97,27 @@ video {
 
 /* Make sure all project images are scaled down */
 .projects-grid img {
-    max-width: 50%;
+    max-width: 100%; /* Keep images responsive */
     height: auto;
 }
+
 /* About Image Size Fix */
 .about-image img {
-    max-width: 250px; /* Set a maximum width to prevent it from getting too big */
+    max-width: 400px; /* Set a maximum width */
     width: 100%; /* Keep it responsive */
     height: auto;
 }
-.logo.logo.png.png {
-    max-width: 150px; /* Adjust the max width to your preference */
+
+/* Logo adjustments */
+.logo {
+    max-width: 150px; /* Adjust the max width of the logo */
     height: auto; /* Keeps the aspect ratio */
     display: block;
     margin: 0 auto; /* Centers the logo */
 }
 
 @media only screen and (max-width: 600px) {
-    .logo.logo.png {
-        max-width: 75px; /* Make it smaller on mobile screens */
+    .logo {
+        max-width: 100px; /* Make it smaller on mobile screens */
     }
 }
-
