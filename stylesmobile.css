@@ -17,7 +17,7 @@
         font-size: 14px; 
     }
 
-    /* Hero content adjustments */
+    /* Hero content  */
     .hero-content h1 {
         font-size: 24px; 
     }
@@ -50,12 +50,12 @@
 
     .about-image img {
         width: 100%; /* Ensure the image uses full width */
-        max-width: 400px; /* Set a max width to keep it from getting too large */
+        max-width: 400px; 
         height: auto;
         margin-bottom: 20px;
     }
 
-    /* Adjust paragraph spacing /*
+    
     .about-content p {
         padding: 0 10px;
         text-align: justify;
