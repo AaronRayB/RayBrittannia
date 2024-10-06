@@ -26,4 +26,20 @@
     }
 }
 
+/* Tablet Styles (max-width: 768px) */
+@media screen and (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap; /* Ensure content doesn't overlap */
+    }
 
+    .about-image img {
+        margin-bottom: 20px;
+        width: 100%; /* Full width to avoid overlap */
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr; /* Ensure single column layout on smaller screens */
+    }
+}
